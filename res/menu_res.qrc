@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="menu">
+    <file>risk_score.png</file>
+    <file>ML4CYBER_Logo.png</file>
+    <file>vinci.png</file>
+    <file>goback.png</file>
+    <file>download.png</file>
+  </qresource>
+</RCC>
