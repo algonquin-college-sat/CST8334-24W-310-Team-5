@@ -1,0 +1,18 @@
+type,module,obj,line,column,endLine,endColumn,path,symbol,message,message-id,risk_level,Output
+convention,binarysearch,,2,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,5,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,7,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,11,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,16,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,20,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,24,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,28,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,31,0,,,binarysearch.py,trailing-whitespace,Trailing whitespace,C0303,,True
+convention,binarysearch,,35,0,,,binarysearch.py,missing-final-newline,Final newline missing,C0304,,True
+convention,binarysearch,,1,0,,,binarysearch.py,missing-module-docstring,Missing module docstring,C0114,,True
+convention,binarysearch,binary_search,1,0,1.0,17.0,binarysearch.py,missing-function-docstring,Missing function or method docstring,C0116,,True
+convention,binarysearch,binary_search,1,34,1.0,35.0,binarysearch.py,invalid-name,"Argument name ""x"" doesn't conform to snake_case naming style",C0103,,True
+warning,binarysearch,binary_search,1,18,1.0,21.0,binarysearch.py,redefined-outer-name,Redefining name 'arr' from outer scope (line 26),W0621,,
+warning,binarysearch,binary_search,1,34,1.0,35.0,binarysearch.py,redefined-outer-name,Redefining name 'x' from outer scope (line 27),W0621,,
+refactor,binarysearch,binary_search,9,8,19.0,55.0,binarysearch.py,no-else-return,"Unnecessary ""elif"" after ""return"", remove the leading ""el"" from ""elif""",R1705,,
+convention,binarysearch,,27,0,27.0,1.0,binarysearch.py,invalid-name,"Constant name ""x"" doesn't conform to UPPER_CASE naming style",C0103,,True
