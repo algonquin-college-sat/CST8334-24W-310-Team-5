@@ -1,0 +1,63 @@
+,Status,severity,cwe->@id,results->result->description->#text,results->result->tool->@category,results->result->tool->@name,rule->@code,rule->@name,risk_level,output,escalated_predicted,escalated_values_predicted,escalated_binary_predicted
+0,escalated,info,,Expected an assignment or function call and instead saw an expression.,,JSHint,JH--W030,Expected an assignment or function call and saw an expression,,,escalated,0.79150134,1
+1,escalated,low,398,Empty block statement.,,ESLint,ESLINT-no-empty,Disallow empty block statements,,True Positive,escalated,0.6549402,1
+2,escalated,info,,,,,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.7162819,1
+3,escalated,medium,665,'sjcl' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.5841841,1
+4,escalated,high,77,,,,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.7800588,1
+5,escalated,medium,398,"""request-promise-native"" is not found.",node,ESLint,ESLINT-NODE-no-missing-require,Disallow 'require()' expressions which import non-existence modules,,True Positive,escalated,0.61732936,1
+6,escalated,info,,,,,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.7162819,1
+7,escalated,low,398,'a' is already defined.,,ESLint,ESLINT-no-redeclare,Disallow variable redeclaration,,True Positive,escalated,0.6463888,1
+8,escalated,high,77,Generic Object Injection Sink,security,ESLint,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.750982,1
+9,escalated,info,,Expected an assignment or function call and instead saw an expression.,,JSHint,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.79150134,1
+10,escalated,info,,Expected an assignment or function call and instead saw an expression.,,JSHint,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.79150134,1
+11,escalated,info,,Expected an assignment or function call and instead saw an expression.,,JSHint,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.79150134,1
+12,escalated,medium,665,'sjcl' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.5841841,1
+13,escalated,high,77,Generic Object Injection Sink,security,ESLint,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.750982,1
+14,escalated,high,77,,,,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.7800588,1
+15,escalated,info,,,,,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.7162819,1
+16,escalated,info,,"Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (identsArr, idents)",,JSHint,JH--W083,Don't make functions within a loop,,True Positive,escalated,0.76492447,1
+17,escalated,low,489,Unexpected console statement.,,ESLint,rule-626705a39e944c3161f73c8666fcb4e2bb8e294b6c4ecbb1f00aa4ab76f8db3d,Leftover Debug Code,,True Positive,escalated,0.5965788,1
+18,escalated,high,77,,,,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.7800588,1
+19,escalated,info,,,,,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.7162819,1
+20,escalated,info,398,Trailing whitespace,,Pylint,PYLINT-C0303,Trailing whitespace,,True Positive,escalated,0.5831917,1
+21,escalated,info,,Expected an assignment or function call and instead saw an expression.,,JSHint,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.79150134,1
+22,escalated,low,489,Unexpected console statement.,,ESLint,rule-626705a39e944c3161f73c8666fcb4e2bb8e294b6c4ecbb1f00aa4ab76f8db3d,Leftover Debug Code,,True Positive,escalated,0.5965788,1
+23,escalated,info,,Expected an assignment or function call and instead saw an expression.,,JSHint,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.79150134,1
+24,escalated,medium,398,"""lodash"" is not found.",node,ESLint,ESLINT-NODE-no-missing-require,Disallow 'require()' expressions which import non-existence modules,,True Positive,escalated,0.65684325,1
+25,escalated,high,77,Generic Object Injection Sink,security,ESLint,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.750982,1
+26,escalated,medium,665,'UpdaterPromise' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.59766,1
+27,escalated,low,561,'reject' is defined but never used.,,ESLint,rule-99e6d22e1a4011529c550091dd6e6cfd13dd4ca63e90fe1c680512e31cff8261,Dead Code,,True Positive,escalated,0.6823885,1
+28,escalated,info,,Missing '()' invoking a constructor.,,JSHint,JH--W058,Missing '()' invoking constructor,,True Positive,escalated,0.7191423,1
+29,escalated,high,77,Variable Assigned to Object Injection Sink,security,ESLint,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.7598189,1
+30,escalated,info,,,,,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.7162819,1
+31,escalated,info,,,,,JH--W117,Not defined,,True Positive,escalated,0.623116,1
+32,escalated,high,77,,,,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.7800588,1
+33,escalated,low,489,Unexpected console statement.,,ESLint,rule-626705a39e944c3161f73c8666fcb4e2bb8e294b6c4ecbb1f00aa4ab76f8db3d,Leftover Debug Code,,True Positive,escalated,0.5965788,1
+34,escalated,info,,Expected an assignment or function call and instead saw an expression.,,JSHint,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.79150134,1
+35,escalated,high,79,Unencoded input 'sym[0]' used in HTML context,xss,ESLint,rule-396ebe8bb0c3dc5d4eb2b5368a97688fdb0f2587416453645c3d06db2b216479,Cross-site Scripting (XSS),,True Positive,escalated,0.7058148,1
+36,escalated,high,77,,,,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.7800588,1
+37,escalated,info,,,,,JH--W040,Possible strict violation,,True Positive,escalated,0.64597356,1
+38,escalated,info,,,,,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.7162819,1
+39,escalated,info,398,Trailing whitespace,,Pylint,PYLINT-C0303,Trailing whitespace,,True Positive,escalated,0.5831917,1
+40,escalated,high,77,Generic Object Injection Sink,security,ESLint,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.750982,1
+41,escalated,low,561,,,,rule-99e6d22e1a4011529c550091dd6e6cfd13dd4ca63e90fe1c680512e31cff8261,Dead Code,,True Positive,escalated,0.72525495,1
+42,escalated,info,,,,,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.7162819,1
+43,escalated,info,398,Trailing whitespace,,Pylint,PYLINT-C0303,Trailing whitespace,,True Positive,escalated,0.5831917,1
+44,escalated,info,,Expected an assignment or function call and instead saw an expression.,,JSHint,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.79150134,1
+45,escalated,high,77,Generic Object Injection Sink,security,ESLint,rule-5e8e5af630e323f31857c1cc395ce98e2bf222272a7adf06b13a4ba4154b1893,Command Injection,,True Positive,escalated,0.750982,1
+46,escalated,medium,665,'sjcl' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.5841841,1
+47,escalated,medium,665,'$' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.5389105,1
+48,escalated,info,,,,,JH--W030,Expected an assignment or function call and saw an expression,,True Positive,escalated,0.7162819,1
+49,false-positive,info,,"Import ""import traceback"" should be placed at the top of the module",,Pylint,PYLINT-C0413,Wrong Import Position,,False Positive,escalated,0.5477116,1
+50,false-positive,medium,665,'$' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.5389105,1
+51,false-positive,medium,665,'BootstrapStep' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.6041187,1
+52,false-positive,info,,"Import ""import os"" should be placed at the top of the module",,Pylint,PYLINT-C0413,Wrong Import Position,,True Positive,escalated,0.5269293,1
+53,false-positive,medium,665,'$' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.5389105,1
+54,false-positive,medium,665,'$' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.5389105,1
+55,false-positive,info,398,Avoid using global variables.,Best Practices,PMD,PMD-Basic Ecmascript-GlobalVariable,Undeclared variables are global by default,,True Positive,FALSE,0.4973672,0
+56,false-positive,medium,665,'$' is not defined.,,ESLint,rule-05fd548cb946f6aefd3831fe4f1fd046e1827757e07f877f3a087b0ed98a03bf,Initialization,,True Positive,escalated,0.5389105,1
+57,false-positive,info,,"Import ""from google.protobuf import message as _message"" should be placed at the top of the module",,Pylint,PYLINT-C0413,Wrong Import Position,,True Positive,FALSE,0.46712437,0
+58,false-positive,info,398,Avoid using global variables.,Best Practices,PMD,PMD-Basic Ecmascript-GlobalVariable,Undeclared variables are global by default,,True Positive,FALSE,0.4973672,0
+59,false-positive,info,,'c' is already defined.,,JSHint,JH--W004,Function already defined,,True Positive,escalated,0.6000635,1
+60,false-positive,info,,'h' is already defined.,,JSHint,JH--W004,Function already defined,,True Positive,escalated,0.60891086,1
+61,false-positive,info,398,Avoid using global variables.,Best Practices,PMD,PMD-Basic Ecmascript-GlobalVariable,Undeclared variables are global by default,,True Positive,FALSE,0.49736723,0
