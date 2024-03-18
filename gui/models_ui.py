@@ -116,13 +116,11 @@ class Ui_ModelsWindow(object):
 
         # QLabel for "Model Type:"
         self.label_ModelType = QtWidgets.QLabel(self.groupBox)
-        # self.label_ModelType.setGeometry(QtCore.QRect(20, 20, 120, 30))
         self.label_ModelType.setObjectName("label_ModelType")
         self.label_ModelType.setText("Model Type:")
 
         # QComboBox for selecting the model type
         self.comboBox_ModelType = QtWidgets.QComboBox(self.groupBox)
-        # self.comboBox_ModelType.setGeometry(QtCore.QRect(13, 45, 190, 30))
         self.comboBox_ModelType.setObjectName("comboBox_ModelType")
         self.comboBox_ModelType.addItem("Stochastic Gradient Descent")
         self.comboBox_ModelType.addItem("Decision Tree")
@@ -279,7 +277,6 @@ class Ui_ModelsWindow(object):
         self.txtB_InfoTrainSamples.setGeometry(QtCore.QRect(20, 100, 81, 22))
         self.txtB_InfoTrainSamples.setReadOnly(True)
         self.txtB_InfoTrainSamples.setObjectName("txtB_InfoTrainSamples")
-        # Tooltip stating the functionality of the 'Train Samples' box with tooltip duration of 6 seconds.
         self.txtB_InfoTrainSamples.setToolTip("Number of training samples in the dataset.")
         self.txtB_InfoTrainSamples.setToolTipDuration(6000)
         self.group_hlayout6.addWidget(self.txtB_InfoTrainSamples)
@@ -355,7 +352,6 @@ class Ui_ModelsWindow(object):
         self.pBar_TrainProgress.setGeometry(QtCore.QRect(30, 110, 1161, 23))
         self.pBar_TrainProgress.setProperty("value", 24)
         self.pBar_TrainProgress.setObjectName("pBar_TrainProgress")
-        # Tooltip stating the functionality of the 'Train Progress' bar with tooltip duration of 6 seconds.
         self.pBar_TrainProgress.setToolTip("Progress of model training.")
         self.pBar_TrainProgress.setToolTipDuration(6000)
         self.group_hlayout9.addWidget(self.pBar_TrainProgress)
@@ -396,7 +392,6 @@ class Ui_ModelsWindow(object):
         self.cBox_EvaluateDataset = QtWidgets.QComboBox(self.groupBox_5)
         self.cBox_EvaluateDataset.setGeometry(QtCore.QRect(20, 100, 131, 22))
         self.cBox_EvaluateDataset.setObjectName("cBox_EvaluateDataset")
-        # Tooltip stating the functionality of the 'Dataset Sample' box with tooltip duration of 6 seconds.
         self.cBox_EvaluateDataset.setToolTip("Type of the dataset sample selected - Train or Test")
         self.cBox_EvaluateDataset.setToolTipDuration(6000)
         self.group_vlayout7.addWidget(self.cBox_EvaluateDataset)
@@ -453,7 +448,6 @@ class Ui_ModelsWindow(object):
         self.dsBox_Threshold.setSingleStep(0.1)
         self.dsBox_Threshold.setProperty("value", 0.5)
         self.dsBox_Threshold.setObjectName("dsBox_Threshold")
-        # Tooltip stating the functionality of the 'Threshold' box with tooltip duration of 6 seconds.
         self.dsBox_Threshold.setToolTip("Helps map a logistic regression value to binary value. Optimal value - 0.50")
         self.dsBox_Threshold.setToolTipDuration(6000)
         self.group_hlayout13.addWidget(self.dsBox_Threshold)
@@ -467,7 +461,6 @@ class Ui_ModelsWindow(object):
         self.txtB_EvalMetricsLoss.setText("")
         self.txtB_EvalMetricsLoss.setReadOnly(True)
         self.txtB_EvalMetricsLoss.setObjectName("txtB_EvalMetricsLoss")
-        # Tooltip stating the functionality of the 'Loss' box with tooltip duration of 6 seconds.
         self.txtB_EvalMetricsLoss.setToolTip("Errors made by the model for each sample.")
         self.txtB_EvalMetricsLoss.setToolTipDuration(6000)
         self.group_vlayout9.addWidget(self.txtB_EvalMetricsLoss) 
@@ -498,7 +491,6 @@ class Ui_ModelsWindow(object):
         self.txtB_EvalMetricsAccuracy.setText("")
         self.txtB_EvalMetricsAccuracy.setReadOnly(True)
         self.txtB_EvalMetricsAccuracy.setObjectName("txtB_EvalMetricsAccuracy")
-        # Tooltip stating the functionality of the 'Accuracy' box with tooltip duration of 6 seconds.
         self.txtB_EvalMetricsAccuracy.setToolTip("The measure of how often the algorithm is predicting correctly.")
         self.txtB_EvalMetricsAccuracy.setToolTipDuration(6000)
         self.group_vlayout10.addWidget(self.txtB_EvalMetricsAccuracy) 
@@ -514,7 +506,6 @@ class Ui_ModelsWindow(object):
         self.txtB_EvalMetricsTN.setText("")
         self.txtB_EvalMetricsTN.setReadOnly(True)
         self.txtB_EvalMetricsTN.setObjectName("txtB_EvalMetricsTN")
-        # Tooltip stating the functionality of the 'True Negative' box with tooltip duration of 6 seconds.
         self.txtB_EvalMetricsTN.setToolTip("Outcome where model correctly predicts the negative result.")
         self.txtB_EvalMetricsTN.setToolTipDuration(6000)
         self.group_vlayout11.addWidget(self.txtB_EvalMetricsTN) 
@@ -530,7 +521,6 @@ class Ui_ModelsWindow(object):
         self.txtB_EvalMetricsPrecision.setText("")
         self.txtB_EvalMetricsPrecision.setReadOnly(True)
         self.txtB_EvalMetricsPrecision.setObjectName("txtB_EvalMetricsPrecision")
-        # Tooltip stating the functionality of the 'Precision' box with tooltip duration of 6 seconds.
         self.txtB_EvalMetricsPrecision.setToolTip("Measure of relevant data from model's predictions.")
         self.txtB_EvalMetricsPrecision.setToolTipDuration(6000)
         self.group_vlayout11.addWidget(self.txtB_EvalMetricsPrecision) 
@@ -546,7 +536,6 @@ class Ui_ModelsWindow(object):
         self.txtB_EvalMetricsFP.setText("")
         self.txtB_EvalMetricsFP.setReadOnly(True)
         self.txtB_EvalMetricsFP.setObjectName("txtB_EvalMetricsFP")
-        # Tooltip stating the functionality of the 'False Positive' box with tooltip duration of 6 seconds.
         self.txtB_EvalMetricsFP.setToolTip("Outcome where model incorrectly predicts the positive result.")
         self.txtB_EvalMetricsFP.setToolTipDuration(6000)
         self.group_vlayout12.addWidget(self.txtB_EvalMetricsFP)
@@ -562,7 +551,6 @@ class Ui_ModelsWindow(object):
         self.txtB_EvalMetricsRecall.setText("")
         self.txtB_EvalMetricsRecall.setReadOnly(True)
         self.txtB_EvalMetricsRecall.setObjectName("txtB_EvalMetricsRecall")
-        # Tooltip stating the functionality of the 'Recall' box with tooltip duration of 6 seconds.
         self.txtB_EvalMetricsRecall.setToolTip("Measures the model's ability to detect positive samples.")
         self.txtB_EvalMetricsRecall.setToolTipDuration(6000)
         self.group_vlayout12.addWidget(self.txtB_EvalMetricsRecall)
@@ -578,7 +566,6 @@ class Ui_ModelsWindow(object):
         self.txtB_EvalMetricsFN.setText("")
         self.txtB_EvalMetricsFN.setReadOnly(True)
         self.txtB_EvalMetricsFN.setObjectName("txtB_EvalMetricsFN")
-        # Tooltip stating the functionality of the 'False Negative' box with tooltip duration of 6 seconds.
         self.txtB_EvalMetricsFN.setToolTip("Outcome where model incorrectly predicts the negative result.")
         self.txtB_EvalMetricsFN.setToolTipDuration(6000)
         self.group_vlayout13.addWidget(self.txtB_EvalMetricsFN)
