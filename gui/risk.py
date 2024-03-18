@@ -12,7 +12,6 @@ import pandas as pd
 import json
 from dataset_column import DatasetColumn
 import math
-from github import Auth, Github
 from PyQt5.QtCore import pyqtSignal
 from pathlib import Path
 
@@ -24,7 +23,7 @@ class Impl_RiskWindow(Ui_RiskWindow, QtWidgets.QMainWindow):
         """Initializes risk window object"""
         super(Ui_RiskWindow, self).__init__()
         self.setupUi(self)
-
+        
         self.datasetDF = datasetDF
         self.currentSample = self.datasetDF.iloc[[currentIdx]]
         self.currentIdx = currentIdx
@@ -419,18 +418,6 @@ class Impl_RiskWindow(Ui_RiskWindow, QtWidgets.QMainWindow):
                 )
             with open(fileName, "w", encoding="utf-8") as fp:
                 json.dump(jsonDict, fp)
-
-             # Doesn't work in JSON files
-            with open(fileName, 'r') as file:
-                data = json.load(file)
-
-            auth = Auth.Token("YOUR TOKEN HERE") # Change Token if you are a different user.
-            g = Github(auth=auth)
-            print(g.get_user().login)
-        
-            repo = g.get_repo("GITHUB FOLDER PATH")
-            repo.create_file(fileName, "test", data, branch="main")
-            print(fileName)
 
             msg = QMessageBox()
             msg.setIcon(QMessageBox.Information)

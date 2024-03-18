@@ -1,13 +1,13 @@
 import pandas as pd
 import numpy as np
 import tensorflow as tf
+from joblib import load
 import json
 from predictions_ui import Ui_PredictionsWindow
 from datasets_workers import WorkerLoadXMLDataset, WorkerLoadXMLCols
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QFileDialog, QMessageBox, QWidget
 from help import Impl_HelpWindow
-from github import Auth, Github
 
 class Impl_PredictionsWindow(Ui_PredictionsWindow, QtWidgets.QMainWindow):
     """Creates predictions window"""
@@ -167,19 +167,27 @@ class Impl_PredictionsWindow(Ui_PredictionsWindow, QtWidgets.QMainWindow):
 
     def btn_LoadModel_clicked(self):
         """clicked event on btn_LoadModel
-        Loads a .h5 trained model.
+        Loads a trained model (either a TensorFlow/Keras .h5 model or a scikit-learn .model file).
         """
         widget = QtWidgets.QWidget()
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
         fileName, _ = QFileDialog.getOpenFileName(
-            widget, "Open Model File", "", "H5 Files (*.h5)", options=options
+            widget, "Open Model File", "", "Model Files (*.h5 *.model)", options=options  # Update the filter to accept both .h5 and .model files
         )
         if fileName:
-            self.model = tf.keras.models.load_model(fileName)
+            if fileName.endswith('.h5'):
+                self.model = tf.keras.models.load_model(fileName)  # Load a Keras model if the file is .h5
+            elif fileName.endswith('.model'):
+                self.model = load(fileName)  # Load a scikit-learn model if the file is .model
+            else:
+                QMessageBox.warning(self, "Unsupported File", "The selected file type is not supported.")  # Show a warning if the file type is not supported
+                return  # Exit the function
+
             self.txtB_ModelPath.setText(fileName)
-        if self.checkFilesHealth():
-            self.loadDataframe(self.txtB_DatasetPath.text())
+            # Optionally, you can add additional logic here, such as enabling the Predict button
+            if self.checkFilesHealth():
+                self.btn_Predict.setEnabled(True)
 
     def checkFilesHealth(self):
         """Checks that dataset, schema and model files are healthy.
@@ -286,16 +294,6 @@ class Impl_PredictionsWindow(Ui_PredictionsWindow, QtWidgets.QMainWindow):
 
                 results_df = pd.concat([self.df_dataset, preds_df], axis=1)
                 results_df.to_csv(fileName)
-
-                with open(fileName, 'r') as file:
-                    data = file.read()
-
-                auth = Auth.Token("YOUR TOKEN HERE") # Change Token if you are a different user.
-                g = Github(auth=auth)
-                print(g.get_user().login)
-        
-                repo = g.get_repo("GITHUB FOLDER PATH")
-                repo.create_file(fileName, "test", data, branch="main")
 
                 msg = QMessageBox()
                 msg.setIcon(QMessageBox.Information)

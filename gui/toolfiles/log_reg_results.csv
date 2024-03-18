@@ -1,4 +1,4 @@
-,@status,@severity,cwe->@id,results->result->description->#text,results->result->tool->@category,results->result->tool->@name,rule->@code,rule->@name,escalated_predicted,escalated_values_predicted,escalated_binary_predicted
+Unnamed: 0,@status,@severity,cwe->@id,results->result->description->#text,results->result->tool->@category,results->result->tool->@name,rule->@code,rule->@name,escalated_predicted,escalated_values_predicted,escalated_binary_predicted
 0,escalated,info,,Unnecessary semicolon.,,JSHint,JH--W032,Unnecessary semicolon,escalated,0.68473184,1
 1,escalated,info,,Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (modInfo),,JSHint,JH--W083,Don't make functions within a loop,escalated,0.70141184,1
 2,escalated,info,,Unnecessary semicolon.,,JSHint,JH--W032,Unnecessary semicolon,escalated,0.68473184,1

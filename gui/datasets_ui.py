@@ -16,7 +16,7 @@ from PyQt5.QtWidgets import QHeaderView
 class Ui_DatasetsWindow(object):
     def setupUi(self, DatasetsWindow):
         DatasetsWindow.setObjectName("DatasetsWindow")
-        DatasetsWindow.resize(1280, 720)
+        DatasetsWindow.resize(1200, 720)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)

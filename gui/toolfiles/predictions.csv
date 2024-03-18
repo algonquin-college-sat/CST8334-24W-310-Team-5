@@ -1,4 +1,4 @@
-,@status,@severity,cwe->@id,results->result->description->#text,results->result->tool->@category,results->result->tool->@name,rule->@code,rule->@name,code->#text,escalated_predicted,escalated_values_predicted,escalated_binary_predicted
+Unnamed: 0,@status,@severity,cwe->@id,results->result->description->#text,results->result->tool->@category,results->result->tool->@name,rule->@code,rule->@name,code->#text,escalated_predicted,escalated_values_predicted,escalated_binary_predicted
 0,escalated,medium,937.0,,,,rule-153a7cf14b4e05a3b7495cf4a975c90c2d9c7422d3cc73751cb0c37ec23edd5e,Using Components with Known Vulnerabilities,,escalated,0.6742308,1
 1,escalated,low,937.0,"Affected versions of `minimist` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  
 Parsing the argument `--__proto__.y=Polluted` adds a `y` property with value `Polluted` to all objects. The argument `--__proto__=Polluted` raises and uncaught error and crashes the application.  

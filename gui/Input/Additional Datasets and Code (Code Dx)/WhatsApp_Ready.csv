@@ -1,0 +1,633 @@
+ID,Severity,CWE,Type,Tool,Location,Path,FileName,Line,Status
+4,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,101,Escalated
+5,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,148,Escalated
+6,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,69,Escalated
+7,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,87,Escalated
+8,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,49,Escalated
+9,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,67,Escalated
+10,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,10,Escalated
+11,Info,,Expected conditional expression and saw an assignment,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,78,Escalated
+12,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,32,False Positive
+13,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,9,Escalated
+14,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,124,False Positive
+15,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,4,Escalated
+16,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,146,Escalated
+17,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,54,Escalated
+18,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,76,Escalated
+19,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,82,Escalated
+20,Low,561,Dead Code,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,129,Escalated
+21,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,87,Escalated
+22,Low,561,Dead Code,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,82,Escalated
+23,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,25,Escalated
+24,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,114,False Positive
+25,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,68,Escalated
+26,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,148,Escalated
+27,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,80,Escalated
+28,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,146,False Positive
+29,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,56,Escalated
+30,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,86,Escalated
+31,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,78,False Positive
+32,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,36,Escalated
+33,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,73,Escalated
+34,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,149,Escalated
+35,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,90,Escalated
+36,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,140,Escalated
+37,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,27,False Positive
+38,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,101,Escalated
+39,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,31,Escalated
+40,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,65,Escalated
+41,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,72,Escalated
+42,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,132,Escalated
+43,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,43,Escalated
+44,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,98,Escalated
+45,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,150,Escalated
+46,Info,,Possible strict violation,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,138,Escalated
+47,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,65,False Positive
+48,Info,,Possible strict violation,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,148,Escalated
+49,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,128,Escalated
+50,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,32,Escalated
+51,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,59,Escalated
+52,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,97,Escalated
+53,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,92,Escalated
+54,Info,,Possible strict violation,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,147,Escalated
+55,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,74,Escalated
+56,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,21,Escalated
+57,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,85,Escalated
+58,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,63,Escalated
+59,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,13,Escalated
+60,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,76,Escalated
+61,Medium,665,Initialization,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,153,Escalated
+62,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,67,Escalated
+63,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,55,Escalated
+64,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,94,Escalated
+65,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,111,Escalated
+66,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,68,Escalated
+67,Low,398,Disallow unnecessary escape usage,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,85,Escalated
+68,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,49,Escalated
+69,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,106,Escalated
+70,Info,,Possible strict violation,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,101,Escalated
+71,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,48,Escalated
+72,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,151,Escalated
+73,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,2,Escalated
+74,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,47,Escalated
+75,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,89,Escalated
+76,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,86,Escalated
+77,High,697,Comparison,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,78,Escalated
+78,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,131,Escalated
+79,Info,,Use out of scope,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,123,False Positive
+80,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,46,Escalated
+81,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,31,False Positive
+82,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,56,Escalated
+83,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,93,Escalated
+84,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,37,Escalated
+85,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,142,Escalated
+86,Info,,Use function form of 'use strict',JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,1,False Positive
+87,High,,Call addEventListener,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,72,Escalated
+88,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,65,Escalated
+89,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,67,Escalated
+90,Info,,Possible strict violation,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,149,Escalated
+91,Low,561,Dead Code,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,126,Escalated
+92,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,23,Escalated
+93,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,144,Escalated
+94,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,128,False Positive
+95,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,10,Escalated
+96,Low,489,Leftover Debug Code,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,79,Escalated
+97,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,78,Escalated
+98,Info,398,For-in loop variable not explicitly scoped,PMD,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,76,Escalated
+99,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,18,Escalated
+100,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,147,Escalated
+101,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,70,Escalated
+102,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,113,Escalated
+103,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,74,Escalated
+104,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,64,Escalated
+105,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,153,Escalated
+106,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,102,Escalated
+107,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,91,Escalated
+108,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,69,Escalated
+109,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,24,Escalated
+110,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,106,Escalated
+111,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,83,Escalated
+112,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,103,Escalated
+113,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,5,Escalated
+114,Low,398,Disallow use of objectprototypes builtins directly,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,121,Escalated
+115,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,143,Escalated
+116,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,11,Escalated
+117,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,71,Escalated
+118,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,92,Escalated
+119,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,111,False Positive
+120,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,17,Escalated
+121,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,93,Escalated
+122,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,25,Escalated
+123,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,30,Escalated
+124,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,74,Escalated
+125,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,91,Escalated
+126,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,93,Escalated
+127,Info,398,For-in loop variable not explicitly scoped,PMD,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,74,Escalated
+128,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,100,Escalated
+129,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,88,Escalated
+130,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,22,Escalated
+131,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,124,Escalated
+132,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,37,Escalated
+133,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,125,Escalated
+134,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,81,Escalated
+135,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,59,Escalated
+136,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,144,Escalated
+137,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,69,Escalated
+138,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,33,Escalated
+139,Info,,A leading decimal point can be confused with a dot,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,29,False Positive
+140,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,95,Escalated
+141,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,11,Escalated
+142,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,131,Escalated
+143,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,150,False Positive
+144,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,78,Escalated
+145,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,72,Escalated
+146,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,90,Escalated
+147,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,41,Escalated
+148,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,153,False Positive
+149,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,138,Escalated
+150,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,108,Escalated
+151,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,3,Escalated
+152,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,43,Escalated
+153,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,146,Escalated
+154,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,23,False Positive
+155,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,70,Escalated
+156,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,57,Escalated
+157,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,141,Escalated
+158,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,30,Escalated
+159,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,57,Escalated
+160,Low,489,Leftover Debug Code,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,146,Escalated
+161,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,16,Escalated
+162,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,29,Escalated
+163,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,94,Escalated
+164,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,14,Escalated
+165,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,98,Escalated
+166,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,153,Escalated
+167,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,79,Escalated
+168,Info,,A leading decimal point can be confused with a dot,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,102,Escalated
+169,Info,,A leading decimal point can be confused with a dot,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,101,False Positive
+170,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,41,Escalated
+171,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,58,Escalated
+172,Low,398,Disallow use of objectprototypes builtins directly,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,74,Escalated
+173,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,20,Escalated
+174,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,95,Escalated
+175,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,20,Escalated
+176,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,6,Escalated
+177,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,128,Escalated
+178,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,75,Escalated
+179,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,30,False Positive
+180,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,76,Escalated
+181,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,36,Escalated
+182,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,150,Escalated
+183,High,310,Cryptographic Issue,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,78,Escalated
+184,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,33,Escalated
+185,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,35,Escalated
+186,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,6,Escalated
+187,Medium,665,Initialization,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,78,Escalated
+188,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,71,Escalated
+189,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,45,Escalated
+190,Low,398,Disallow use of objectprototypes builtins directly,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,76,Escalated
+191,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,58,False Positive
+192,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,27,Escalated
+193,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,13,Escalated
+194,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,2,Escalated
+195,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,151,Escalated
+196,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,96,Escalated
+197,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,85,Escalated
+198,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,147,Escalated
+199,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,21,Escalated
+200,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,27,Escalated
+201,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,63,Escalated
+202,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,23,Escalated
+203,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,75,Escalated
+204,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,102,Escalated
+205,Info,,Not defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,86,Escalated
+206,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,24,Escalated
+207,Info,,A leading decimal point can be confused with a dot,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,24,Escalated
+208,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,76,Escalated
+209,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,12,Escalated
+210,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,16,Escalated
+211,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,66,Escalated
+212,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,130,Escalated
+213,Info,398,For-in loop variable not explicitly scoped,PMD,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,84,Escalated
+214,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,30,Escalated
+215,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,53,Escalated
+216,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,109,Escalated
+217,Low,398,Disallow use of objectprototypes builtins directly,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,86,Escalated
+218,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,29,Escalated
+219,Info,,Use out of scope,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,122,False Positive
+220,Low,398,Disallow empty block statements,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,14,Escalated
+221,Info,398,For-in loop variable not explicitly scoped,PMD,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,86,Escalated
+222,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,94,False Positive
+223,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,18,Escalated
+224,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,57,Escalated
+225,Low,398,Disallow use of objectprototypes builtins directly,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,84,Escalated
+226,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,124,Escalated
+227,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,9,Escalated
+228,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,35,Escalated
+229,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,26,Escalated
+230,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,7,Escalated
+231,Low,561,Dead Code,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,127,Escalated
+232,Medium,398,Disallow assignment to native objects or read-only global variables,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,146,Escalated
+233,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,38,Escalated
+234,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,55,Escalated
+235,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,106,Escalated
+236,Info,,Missing '()' invoking constructor,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,149,Escalated
+237,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,79,Escalated
+238,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,121,Escalated
+239,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,51,Escalated
+240,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,114,Escalated
+241,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,49,False Positive
+242,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,38,Escalated
+243,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,35,False Positive
+244,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,112,Escalated
+245,Low,398,Disallow variable redeclaration,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,94,Escalated
+246,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,89,Escalated
+247,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,113,Escalated
+248,Info,,Label on statement,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,78,Escalated
+249,Info,,Function already defined,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,38,False Positive
+250,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,107,Escalated
+251,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,52,Escalated
+252,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,132,Escalated
+253,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,4,Escalated
+254,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,5,Escalated
+255,High,77,Command Injection,ESLint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,97,Escalated
+256,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,34,Escalated
+257,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,99,Escalated
+258,Info,,Possible strict violation,JSHint,whatsapp\client\lib\sjcl\js\sjcl-1.0.7.js,whatsapp\client\lib\sjcl\js,,143,Escalated
+259,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,780,Escalated
+260,Low,561,Dead Code,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,557,Escalated
+261,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,228,Escalated
+262,High,77,Command Injection,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,85,Escalated
+263,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,446,Escalated
+264,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,224,Escalated
+265,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,452,Escalated
+266,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,230,Escalated
+267,Low,561,Dead Code,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,604,Escalated
+268,Low,704,Disallow unnecessary boolean casts,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,520,Escalated
+269,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,450,Escalated
+270,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,477,Escalated
+271,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,225,Escalated
+272,High,77,Command Injection,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,133,Escalated
+273,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,451,Escalated
+274,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,448,Escalated
+275,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,244,Escalated
+276,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,456,Escalated
+277,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,449,Escalated
+278,Low,398,Disallow use of objectprototypes builtins directly,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,132,Escalated
+279,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,461,Escalated
+280,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,445,Escalated
+281,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,448,Escalated
+282,High,,Call addEventListener,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,500-502,Escalated
+283,High,,Call addEventListener,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,250-261,Escalated
+284,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,445,Escalated
+285,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,447,Escalated
+286,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,456,Escalated
+287,High,,Call addEventListener,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,485-498,Escalated
+288,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,224,Escalated
+289,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,227,Escalated
+290,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,229,Escalated
+291,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,460,Escalated
+292,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,447,Escalated
+293,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,232,Escalated
+294,High,77,Command Injection,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,177,Escalated
+295,Low,561,Dead Code,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,580,Escalated
+296,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,231,Escalated
+297,Info,,Bad escaping of EOL,JSHint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,457,Escalated
+298,Low,561,Dead Code,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,746,Escalated
+299,Low,561,Dead Code,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,797,Escalated
+300,Low,561,Dead Code,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,9,Escalated
+301,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,462,Escalated
+302,Low,561,Dead Code,ESLint,whatsapp\client\lib\jsonTree\jsonTree.js,whatsapp\client\lib\jsonTree,,624,Escalated
+303,Low,561,Dead Code,ESLint,whatsapp\index.js,whatsapp,,3,Escalated
+304,Low,561,Dead Code,ESLint,whatsapp\index.js,whatsapp,,98,Escalated
+305,Low,561,Dead Code,ESLint,whatsapp\index.js,whatsapp,,1,Escalated
+306,Low,489,Leftover Debug Code,ESLint,whatsapp\index.js,whatsapp,,15,Escalated
+307,Medium,665,Initialization,ESLint,whatsapp\index.js,whatsapp,,10,Escalated
+308,Low,561,Dead Code,ESLint,whatsapp\index.js,whatsapp,,2,Escalated
+309,Medium,665,Initialization,ESLint,whatsapp\index.js,whatsapp,,2,Escalated
+310,Medium,665,Initialization,ESLint,whatsapp\index.js,whatsapp,,5,Escalated
+311,Low,561,Dead Code,ESLint,whatsapp\index.js,whatsapp,,46,Escalated
+312,Medium,665,Initialization,ESLint,whatsapp\index.js,whatsapp,,3,Escalated
+313,Medium,665,Initialization,ESLint,whatsapp\index.js,whatsapp,,6,Escalated
+314,Medium,665,Initialization,ESLint,whatsapp\index.js,whatsapp,,9,Escalated
+315,Low,561,Dead Code,ESLint,whatsapp\index.js,whatsapp,,22,Escalated
+316,Medium,665,Initialization,ESLint,whatsapp\index.js,whatsapp,,1,Escalated
+317,Medium,665,Initialization,ESLint,whatsapp\index.js,whatsapp,,4,Escalated
+318,Low,489,Leftover Debug Code,ESLint,whatsapp\index.js,whatsapp,,213,Escalated
+319,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,170,False Positive
+320,Low,489,Leftover Debug Code,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,163,Escalated
+321,Medium,665,Initialization,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,18,Escalated
+322,Medium,665,Initialization,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,2,Escalated
+323,Medium,665,Initialization,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,170,Escalated
+324,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,67,False Positive
+325,High,,Call setTimeout,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,98-102,Escalated
+326,Medium,665,Initialization,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,123,Escalated
+327,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,53,False Positive
+328,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,69,False Positive
+329,High,77,Command Injection,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,31,Escalated
+330,Low,489,Leftover Debug Code,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,27,Escalated
+331,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,68,False Positive
+332,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,3,False Positive
+333,Medium,665,Initialization,ESLint,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,3,Escalated
+334,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,54,False Positive
+335,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\WebSocketClient.js,whatsapp\client\js,,75,False Positive
+336,Info,,Consider using ternary,Pylint,whatsapp\backend\whatsapp_protobuf_pb2.py,whatsapp\backend,,5,Escalated
+337,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_protobuf_pb2.py,whatsapp\backend,,8,False Positive
+338,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_protobuf_pb2.py,whatsapp\backend,,9,False Positive
+339,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_protobuf_pb2.py,whatsapp\backend,,7,False Positive
+340,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_protobuf_pb2.py,whatsapp\backend,,6,False Positive
+341,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,52,Escalated
+342,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,90,Escalated
+343,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,48,Escalated
+344,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,80,Escalated
+345,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,122,Escalated
+346,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,81,Escalated
+347,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,35,Escalated
+348,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,141,Escalated
+349,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,106,Escalated
+350,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,109,Escalated
+351,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,124,Escalated
+352,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,120,Escalated
+353,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,42,Escalated
+354,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,145,Escalated
+355,Low,561,Dead Code,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,72,Escalated
+356,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,82,Escalated
+357,Low,489,Leftover Debug Code,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,149,Escalated
+358,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,143,Escalated
+359,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,71,Escalated
+360,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,29,Escalated
+361,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,76,Escalated
+362,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,146,Escalated
+363,Low,489,Leftover Debug Code,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,135,Escalated
+364,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,75,Escalated
+365,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,88,Escalated
+366,Low,489,Leftover Debug Code,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,157,Escalated
+367,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,73,Escalated
+368,Low,489,Leftover Debug Code,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,95,Escalated
+369,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,74,Escalated
+370,Low,561,Dead Code,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,156,Escalated
+371,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,105,Escalated
+372,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,115,Escalated
+373,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,50,Escalated
+374,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,149,Escalated
+375,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,119,Escalated
+376,Medium,665,Initialization,ESLint,whatsapp\client\login-via-js-demo.html,whatsapp\client,,123,Escalated
+377,Low,489,Leftover Debug Code,ESLint,whatsapp\client\js\UpdaterPromise.js,whatsapp\client\js,,5,Escalated
+378,Medium,665,Initialization,ESLint,whatsapp\client\js\UpdaterPromise.js,whatsapp\client\js,,27,Escalated
+379,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\UpdaterPromise.js,whatsapp\client\js,,27,False Positive
+380,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\UpdaterPromise.js,whatsapp\client\js,,6,False Positive
+381,Info,99,Resource Injection,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,36,False Positive
+382,Info,398,Unused import,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,1,Escalated
+383,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,9,Escalated
+384,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,64,Escalated
+385,Info,,Unnecessary else after return,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,182,False Positive
+386,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,103,Escalated
+387,Low,227,API Abuse,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,31,False Positive
+388,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,29,Escalated
+389,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,133,Escalated
+390,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,180,Escalated
+391,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,20,Escalated
+392,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,141,Escalated
+393,Low,227,API Abuse,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,25,False Positive
+394,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,26,Escalated
+395,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,42,Escalated
+396,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,153,Escalated
+397,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,95,Escalated
+398,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,35,Escalated
+399,Info,,Unnecessary else after return,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,163,False Positive
+400,Low,,Too many boolean expressions,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,182,False Positive
+401,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,109,Escalated
+402,Low,665,Initialization,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,145,Escalated
+403,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,117,Escalated
+404,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,147,Escalated
+405,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,89,False Positive
+406,Low,,Unscriptable Object,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,158,Escalated
+407,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,90,Escalated
+408,Info,,Unnecessary else after return,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,171,False Positive
+409,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,72,Escalated
+410,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,32,Escalated
+411,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,15,Escalated
+412,Info,99,Resource Injection,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,33,False Positive
+413,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,121,Escalated
+414,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,161,Escalated
+415,Low,227,API Abuse,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,28,False Positive
+416,Info,398,Trailing whitespace,Pylint,whatsapp\backend\whatsapp_binary_writer.py,whatsapp\backend,,23,Escalated
+417,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,10,False Positive
+418,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,12,False Positive
+419,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,9,False Positive
+420,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,17,False Positive
+421,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,11,False Positive
+422,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,15,False Positive
+423,Low,665,Initialization,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,105,Escalated
+424,Info,398,Unused import,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,10,Escalated
+425,Low,665,Initialization,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,19,Escalated
+426,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,13,False Positive
+427,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,8,False Positive
+428,Info,,Wrong Import Position,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,16,False Positive
+429,Info,398,Unused import,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,9,Escalated
+430,Info,398,Unused import,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,8,Escalated
+431,Low,388,Error Handling,Pylint,whatsapp\backend\whatsapp_web_backend.py,whatsapp\backend,,97,Escalated
+432,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\BootstrapStep.js,whatsapp\client\js,,17-21,False Positive
+433,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\BootstrapStep.js,whatsapp\client\js,,5,False Positive
+434,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\BootstrapStep.js,whatsapp\client\js,,51,False Positive
+435,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\BootstrapStep.js,whatsapp\client\js,,4,False Positive
+436,Medium,665,Initialization,ESLint,whatsapp\client\js\BootstrapStep.js,whatsapp\client\js,,51,Escalated
+437,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\BootstrapStep.js,whatsapp\client\js,,6,False Positive
+438,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\BootstrapStep.js,whatsapp\client\js,,26-34,False Positive
+439,Info,99,Resource Injection,Pylint,whatsapp\backend\whatsapp_defines.py,whatsapp\backend,,115,False Positive
+440,Info,99,Resource Injection,Pylint,whatsapp\backend\whatsapp_defines.py,whatsapp\backend,,129,False Positive
+441,Info,,Wrong Import Order,Pylint,whatsapp\backend\whatsapp_defines.py,whatsapp\backend,,2,Escalated
+442,Info,99,Resource Injection,Pylint,whatsapp\backend\whatsapp_defines.py,whatsapp\backend,,26,False Positive
+443,Info,99,Resource Injection,Pylint,whatsapp\backend\whatsapp_defines.py,whatsapp\backend,,142,False Positive
+444,Medium,665,Initialization,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,1,Escalated
+445,Info,,Don't make functions within a loop,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,184,Escalated
+446,Info,,Don't make functions within a loop,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,216,Escalated
+447,Low,489,Leftover Debug Code,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,177,Escalated
+448,Info,,Don't make functions within a loop,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,48,Escalated
+449,Info,,Don't make functions within a loop,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,192,Escalated
+450,High,77,Command Injection,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,92,Escalated
+451,Low,489,Leftover Debug Code,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,87,Escalated
+452,Info,,Don't make functions within a loop,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,209,Escalated
+453,Info,,Don't make functions within a loop,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,62,Escalated
+454,Medium,665,Initialization,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,2,Escalated
+455,Low,489,Leftover Debug Code,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,118,Escalated
+456,Info,,Don't make functions within a loop,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,159,False Positive
+457,Low,489,Leftover Debug Code,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,217,Escalated
+458,High,77,Command Injection,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,5,Escalated
+459,Low,489,Leftover Debug Code,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,176,Escalated
+460,Low,398,Disallow unnecessary semicolons,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,152,Escalated
+461,Low,489,Leftover Debug Code,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,124,Escalated
+462,High,77,Command Injection,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,55,Escalated
+463,Info,,Expected an assignment or function call and saw an expression,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,118,False Positive
+464,High,77,Command Injection,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,52,Escalated
+465,Info,,Don't make functions within a loop,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,83,Escalated
+466,High,77,Command Injection,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,139,Escalated
+467,Low,398,Disallow unnecessary semicolons,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,75,Escalated
+468,Info,,Unnecessary semicolon,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,152,Escalated
+469,High,77,Command Injection,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,85,Escalated
+470,Medium,665,Initialization,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,3,Escalated
+471,Info,,Use of ES6 extension,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,8,False Positive
+472,Info,,Unnecessary semicolon,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,75,Escalated
+473,Low,489,Leftover Debug Code,ESLint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,178,Escalated
+474,Info,,Use of ES6 extension,JSHint,whatsapp\doc\spec\protobuf-extractor\index.js,whatsapp\doc\spec\protobuf-extractor,,18,False Positive
+475,Low,665,Initialization,Pylint,whatsapp\backend\utilities.py,whatsapp\backend,,43,Escalated
+476,Info,,Unnecessary else after return,Pylint,whatsapp\backend\utilities.py,whatsapp\backend,,31,False Positive
+477,Low,,Inconsistent return statements,Pylint,whatsapp\backend\utilities.py,whatsapp\backend,,19,False Positive
+478,Info,,Unnecessary else after return,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,55,False Positive
+479,Low,,Inconsistent return statements,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,54,False Positive
+480,Info,,Unnecessary else after return,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,61,False Positive
+481,Info,561,Dead Code,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,136,False Positive
+482,Info,561,Dead Code,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,47,False Positive
+483,Info,561,Dead Code,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,174,False Positive
+484,Info,,Unnecessary else after return,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,90,False Positive
+485,Info,,Unnecessary else after return,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,105,False Positive
+486,Low,,Inconsistent return statements,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,98,False Positive
+487,Info,,Unnecessary else after return,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,74,False Positive
+488,Info,561,Dead Code,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,143,False Positive
+489,Low,,Inconsistent return statements,Pylint,whatsapp\backend\whatsapp_binary_reader.py,whatsapp\backend,,132,False Positive
+490,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,78,Escalated
+491,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,22,Escalated
+492,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1106,Escalated
+493,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,127,Escalated
+494,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1127,Escalated
+495,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,536,Escalated
+496,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1151,Escalated
+497,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,77,Escalated
+498,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,512,Escalated
+499,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,86,Escalated
+500,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1118,Escalated
+501,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1107,Escalated
+502,Low,561,Dead Code,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,26,Escalated
+503,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1304,Escalated
+504,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1197,Escalated
+505,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,574,Escalated
+506,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,792,Escalated
+507,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1121,Escalated
+508,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1114,Escalated
+509,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1105,Escalated
+510,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1396,Escalated
+511,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1115,Escalated
+512,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,517,Escalated
+513,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,659,Escalated
+514,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1173,Escalated
+515,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,571,Escalated
+516,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,523,Escalated
+517,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1154,Escalated
+518,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1215,Escalated
+519,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1408,Escalated
+520,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,528,Escalated
+521,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1170,Escalated
+522,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1110,Escalated
+523,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,131,Escalated
+524,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1382,Escalated
+525,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1194,Escalated
+526,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1109,Escalated
+527,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,793,Escalated
+528,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1300,Escalated
+529,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,541,Escalated
+530,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,542,Escalated
+531,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,572,Escalated
+532,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1019,Escalated
+533,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1407,Escalated
+534,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1193,Escalated
+535,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,827,Escalated
+536,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1418,Escalated
+537,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,122,Escalated
+538,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1176,Escalated
+539,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1020,Escalated
+540,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1289,Escalated
+541,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1027,Escalated
+542,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1120,Escalated
+543,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,67,Escalated
+544,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,93,Escalated
+545,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1139,Escalated
+546,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,39,Escalated
+547,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,660,Escalated
+548,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1138,Escalated
+549,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,61,Escalated
+550,Low,561,Dead Code,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1134,Escalated
+551,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1116,Escalated
+552,Medium,665,Initialization,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1436,Escalated
+553,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,103,Escalated
+554,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,69,Escalated
+555,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1345,Escalated
+556,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,573,Escalated
+557,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1128,Escalated
+558,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,102,Escalated
+559,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1288,Escalated
+560,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1061,Escalated
+561,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1150,Escalated
+562,Low,561,Dead Code,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1164,Escalated
+563,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,1179,Escalated
+564,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,826,Escalated
+565,High,77,Command Injection,ESLint,whatsapp\client\lib\curve25519-js\js\axlsign.js,whatsapp\client\lib\curve25519-js\js,,79,Escalated
+566,Medium,665,Initialization,ESLint,whatsapp\index_jsdemo.js,whatsapp,,4,Escalated
+567,Medium,665,Initialization,ESLint,whatsapp\index_jsdemo.js,whatsapp,,2,Escalated
+568,Medium,665,Initialization,ESLint,whatsapp\index_jsdemo.js,whatsapp,,1,Escalated
+569,Low,561,Dead Code,ESLint,whatsapp\index_jsdemo.js,whatsapp,,16,Escalated
+570,Low,561,Dead Code,ESLint,whatsapp\index_jsdemo.js,whatsapp,,11,Escalated
+571,Low,561,Dead Code,ESLint,whatsapp\index_jsdemo.js,whatsapp,,1,Escalated
+572,Low,561,Dead Code,ESLint,whatsapp\index_jsdemo.js,whatsapp,,2,Escalated
+573,Low,561,Dead Code,ESLint,whatsapp\index_jsdemo.js,whatsapp,,3,Escalated
+574,Medium,665,Initialization,ESLint,whatsapp\index_jsdemo.js,whatsapp,,3,Escalated
+575,Low,561,Dead Code,ESLint,whatsapp\index_jsdemo.js,whatsapp,,15,Escalated
+576,Low,489,Leftover Debug Code,ESLint,whatsapp\index_jsdemo.js,whatsapp,,9,Escalated
+577,Low,561,Dead Code,ESLint,whatsapp\index_jsdemo.js,whatsapp,,18,Escalated
+578,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,55,Escalated
+579,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,64,Escalated
+580,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,18,False Positive
+581,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,198,Escalated
+582,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,50,False Positive
+583,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,10,False Positive
+584,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,56,False Positive
+585,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,84,Escalated
+586,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,233,False Positive
+587,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,53,False Positive
+588,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,169,Escalated
+589,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,47,False Positive
+590,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,244,False Positive
+591,High,77,Command Injection,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,165,Escalated
+592,Low,561,Dead Code,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,132,Escalated
+593,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,197,False Positive
+594,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,167,Escalated
+595,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,196,False Positive
+596,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,163,Escalated
+597,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,234,Escalated
+598,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,199,False Positive
+599,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,197,Escalated
+600,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,195,False Positive
+601,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,55,False Positive
+602,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,198,False Positive
+603,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,17,False Positive
+604,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,11,False Positive
+605,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,245,False Positive
+606,Low,561,Dead Code,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,4,Escalated
+607,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,163,False Positive
+608,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,164,False Positive
+609,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,191,Escalated
+610,High,77,Command Injection,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,214,Escalated
+611,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,110,Escalated
+612,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,13,False Positive
+613,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,14,False Positive
+614,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,60,False Positive
+615,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\main.js,whatsapp\client\js,,191,False Positive
+616,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,44,False Positive
+617,Low,561,Dead Code,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,23,Escalated
+618,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,61,False Positive
+619,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,199,Escalated
+620,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,220,False Positive
+621,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,2,Escalated
+622,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,213,False Positive
+623,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\main.js,whatsapp\client\js,,44,False Positive
+624,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,59,False Positive
+625,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,225,False Positive
+626,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,229,False Positive
+627,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\main.js,whatsapp\client\js,,49,False Positive
+628,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,216,False Positive
+629,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,200,False Positive
+630,High,,Call setTimeout,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,6,Escalated
+631,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,196,Escalated
+632,Info,398,Undeclared variables are global by default,PMD,whatsapp\client\js\main.js,whatsapp\client\js,,53,False Positive
+633,Medium,665,Initialization,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,136,Escalated
+634,Low,561,Dead Code,ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,5,Escalated
+635,High,79,Cross-site Scripting (XSS),ESLint,whatsapp\client\js\main.js,whatsapp\client\js,,195,Escalated

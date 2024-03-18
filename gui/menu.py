@@ -2,6 +2,9 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 from menu_ui import Ui_MainWindow
 from datasets import Impl_DatasetsWindow
+from datasets_labeler import Impl_DatasetsLabelerWindow
+from labeler import Impl_LabelerWindow
+from risk_from_menu import Impl_LabelerToRisk
 from models import Impl_ModelsWindow
 from predictions import Impl_PredictionsWindow
 from help import Impl_HelpWindow
@@ -16,7 +19,6 @@ class Impl_MainWindow(Ui_MainWindow, QtWidgets.QMainWindow):
         """Initializes menu window object"""
         super(Impl_MainWindow, self).__init__()
         self.setupUi(self)
-
         self.customEvents()
         self.customInit()
 
@@ -26,12 +28,22 @@ class Impl_MainWindow(Ui_MainWindow, QtWidgets.QMainWindow):
 
     def customEvents(self):
         """Custom events method; here you connect functions with the UI."""
+        self.label.clicked.connect(self.btn_Label_clicked)
         self.btn_Datasets.clicked.connect(self.btn_Datasets_clicked)
+        self.btn_Labeler.clicked.connect(self.btn_Labeler_clicked)
+        self.btn_Risk.clicked.connect(self.btn_Risk_clicked)
         self.btn_Models.clicked.connect(self.btn_Models_clicked)
         self.btn_Predictions.clicked.connect(self.btn_Predictions_clicked)
         self.btn_Analysis.clicked.connect(self.btn_Analysis_clicked)
         self.btn_Visualize.clicked.connect(self.btn_Visualizations_clicked)
         self.btn_Help.clicked.connect(self.btn_Help_clicked)
+
+    def btn_Label_clicked(self):
+        """Clicked event on btn_Datasets component.
+        Loads and shows Datasets Window.
+        """
+
+        self.clearRightLayout()  # Clear the right layout
 
     def btn_Datasets_clicked(self):
         """Clicked event on btn_Datasets component.
@@ -42,6 +54,26 @@ class Impl_MainWindow(Ui_MainWindow, QtWidgets.QMainWindow):
         self.ds_ui = Impl_DatasetsWindow()
         self.rightLayout.addWidget(self.ds_ui)
         self.ds_ui.show()
+
+    def btn_Labeler_clicked(self):
+        """Clicked event on btn_Datasets component.
+        Loads and shows Datasets Window.
+        """
+
+        self.clearRightLayout()  # Clear the right layout before adding a new window
+        self.ds_ui = Impl_LabelerWindow()
+        self.rightLayout.addWidget(self.ds_ui)
+        self.ds_ui.show()
+
+    def btn_Risk_clicked(self):
+        """Clicked event on btn_Datasets component.
+        Loads and shows Datasets Window.
+        """
+        self.clearRightLayout()  # Clear the right layout before adding a new window
+        self.ds_ui = Impl_LabelerToRisk()
+        
+        # self.rightLayout.addWidget(self.ds_ui)
+        # self.ds_ui.show()
 
     def btn_Models_clicked(self):
         """Clicked event on btn_Models component.

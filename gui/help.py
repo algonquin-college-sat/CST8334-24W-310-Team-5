@@ -13,7 +13,6 @@ class Impl_HelpWindow(Ui_HelpWindow, QtWidgets.QMainWindow):
         self.setupUi(self)
         self.customInit()
 
-
     def customInit(self):
         """Custom init method"""
         self.df_dataset = None

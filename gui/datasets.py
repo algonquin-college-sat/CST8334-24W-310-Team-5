@@ -61,7 +61,6 @@ class Impl_DatasetsWindow(Ui_DatasetsWindow, QtWidgets.QMainWindow,):
         super(Impl_DatasetsWindow, self).__init__()
         self.saved_dataset_path = None
         self.setupUi(self)
-
         self.customEvents()
         self.customInit()
 

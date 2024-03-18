@@ -10,13 +10,13 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtGui import QIcon
-from common_ui import add_actions_to_toolbar
+# from common_ui import add_actions_to_toolbar
 
 
 class Ui_DatasetsLabelerWindow(object):
     def setupUi(self, DatasetsLabelerWindow):
         DatasetsLabelerWindow.setObjectName("DatasetsLabelerWindow")
-        DatasetsLabelerWindow.setMinimumSize(1280, 720)
+        DatasetsLabelerWindow.setMinimumSize(1200, 720)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -46,9 +46,9 @@ class Ui_DatasetsLabelerWindow(object):
         self.centralwidget = QtWidgets.QWidget(DatasetsLabelerWindow)
         self.centralwidget.setObjectName("centralwidget")
 
-         #tool bar
-        self.toolbar = DatasetsLabelerWindow.addToolBar("TopToolBar")
-        self.toolbar, self.go_back_button, self.home_button = add_actions_to_toolbar(self.toolbar, self)
+        #  #tool bar
+        # self.toolbar = DatasetsLabelerWindow.addToolBar("TopToolBar")
+        # self.toolbar, self.go_back_button, self.home_button = add_actions_to_toolbar(self.toolbar, self)
 
         # The horizontal layout for the widget to help resizing the window
         self.hlayout = QtWidgets.QHBoxLayout(self.centralwidget)
@@ -97,7 +97,7 @@ class Ui_DatasetsLabelerWindow(object):
         # group1
         self.txtB_DatasetPathSampling = QtWidgets.QLineEdit(self.groupBox_3)
         self.txtB_DatasetPathSampling.setEnabled(False)
-        self.txtB_DatasetPathSampling.setGeometry(QtCore.QRect(280, 40, 911, 31))
+        self.txtB_DatasetPathSampling.setGeometry(QtCore.QRect(280, 40, 701, 31))
         self.txtB_DatasetPathSampling.setObjectName("txtB_DatasetPathSampling")
         self.group_hlayout11.addWidget(self.txtB_DatasetPathSampling, stretch=8)
 

@@ -57,7 +57,6 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
 
-
         # Splitter for left and right divisions
         self.splitter = QtWidgets.QSplitter(QtCore.Qt.Horizontal)
         self.splitter.setObjectName("splitter")
@@ -84,11 +83,10 @@ class Ui_MainWindow(object):
         # Adding the buttons to the vertical layout
 
         # Add the label to the main layout
-        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label = QtWidgets.QPushButton(self.centralwidget)
         self.label.setObjectName("label")
         self.label.setGeometry(QtCore.QRect(0, 50, 100, 20))
         self.label.setText("ML Vinci Tool")
-        self.label.setAlignment(QtCore.Qt.AlignCenter)  # Align label text to the center
         self.leftLayout.addWidget(self.label)
 
         # Dataset button
@@ -96,6 +94,19 @@ class Ui_MainWindow(object):
         self.btn_Datasets.setObjectName("btn_Datasets")
         self.btn_Datasets.setGeometry(QtCore.QRect(10, 100, 100, 30))
         self.leftLayout.addWidget(self.btn_Datasets)
+        
+        # Labeler button
+        self.btn_Labeler = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_Labeler.setObjectName("btn_Labeler")
+        self.btn_Labeler.setGeometry(QtCore.QRect(10, 250, 100, 30))  
+        self.leftLayout.addWidget(self.btn_Labeler)
+
+        # Risk button
+        self.btn_Risk = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_Risk.setObjectName("btn_Risk")
+        self.btn_Risk.setGeometry(QtCore.QRect(10, 250, 100, 30))  
+        self.leftLayout.addWidget(self.btn_Risk)
+
         # Models button
         self.btn_Models = QtWidgets.QPushButton(self.centralwidget)
         self.btn_Models.setObjectName("btn_Models")
@@ -156,7 +167,6 @@ class Ui_MainWindow(object):
         self.label.setObjectName("label")
 
         font = QtGui.QFont()
-
         font.setFamily("MS Shell Dlg 2")
         font.setPointSize(12)
         font.setBold(True)
@@ -184,6 +194,64 @@ class Ui_MainWindow(object):
             "}"
         )
         self.btn_Datasets.setObjectName("btn_Datasets")
+
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setStrikeOut(False)
+        self.btn_Labeler.setFont(font)
+        self.btn_Labeler.setStyleSheet(
+            "* {\n"
+            "    background-color:#ffffff;\n"
+            "    border-radius:3px;\n"
+            "    border:6px solid #5d64b0;\n"
+            "    color:#355398;\n"
+            '    font: 12pt "Times";\n'
+            "    font-weight: bold;\n"
+            "    padding:5px 3px;\n"
+            "    text-decoration:none;\n"
+            "}\n"
+            "*:hover {\n"
+            "    background-color:#def2ff;\n"
+            "}\n"
+            "*:active {\n"
+            "    position:relative;\n"
+            "    top:1px;\n"
+            "}"
+        )
+        self.btn_Labeler.setObjectName("btn_Labeler")
+
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setStrikeOut(False)
+        self.btn_Risk.setFont(font)
+        self.btn_Risk.setStyleSheet(
+            "* {\n"
+            "    background-color:#ffffff;\n"
+            "    border-radius:3px;\n"
+            "    border:6px solid #5d64b0;\n"
+            "    color:#355398;\n"
+            '    font: 12pt "Times";\n'
+            "    font-weight: bold;\n"
+            "    padding:5px 3px;\n"
+            "    text-decoration:none;\n"
+            "}\n"
+            "*:hover {\n"
+            "    background-color:#def2ff;\n"
+            "}\n"
+            "*:active {\n"
+            "    position:relative;\n"
+            "    top:1px;\n"
+            "}"
+        )
+        self.btn_Risk.setObjectName("btn_Risk")
 
         font = QtGui.QFont()
         font.setFamily("MS Shell Dlg 2")
@@ -341,10 +409,12 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         # Set the desired height for the buttons
-        button_height = 80
+        button_height = 70
 
         # Set the height of each button
         self.btn_Datasets.setFixedHeight(button_height)
+        self.btn_Labeler.setFixedHeight(button_height)
+        self.btn_Risk.setFixedHeight(button_height)
         self.btn_Models.setFixedHeight(button_height)
         self.btn_Predictions.setFixedHeight(button_height)
         self.btn_Analysis.setFixedHeight(button_height)
@@ -358,6 +428,8 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Vinci ML Tool"))
         self.btn_Datasets.setText(_translate("MainWindow", "DATASETS"))
+        self.btn_Labeler.setText(_translate("MainWindow", "LABELER"))
+        self.btn_Risk.setText(_translate("MainWindow", "RISK"))
         self.btn_Models.setText(_translate("MainWindow", "MODEL TRAINING"))
         self.btn_Predictions.setText(_translate("MainWindow", "PREDICTIONS"))
         self.btn_Analysis.setText(_translate("MainWindow", "DATA ANALYSIS"))

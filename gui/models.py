@@ -1,4 +1,6 @@
 import json
+import joblib
+from keras.models import Model as KerasModel
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -8,7 +10,8 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QFileDialog, QMessageBox, QWidget
 from models_ui import Ui_ModelsWindow
 from models_workers import WorkerTrainModel
-from github import Auth, Github
+from ModelProperties import Impl_ModelPropertiesWindow
+
 
 class Impl_ModelsWindow(Ui_ModelsWindow, QtWidgets.QMainWindow):
     """Creates models window"""
@@ -17,34 +20,53 @@ class Impl_ModelsWindow(Ui_ModelsWindow, QtWidgets.QMainWindow):
         """Initializes models window object"""
         super(Impl_ModelsWindow, self).__init__()
         self.setupUi(self)
-
         self.customEvents()
         self.customInit()
+        self.btn_LoadSchema_clicked()
 
     def customEvents(
         self,
     ):
         """Custom events method; here you connect functions with the UI."""
         self.btn_LoadSchema.clicked.connect(self.btn_LoadSchema_clicked)
+        self.btn_ModelProperties.clicked.connect(self.btn_ModelProperties_clicked)
         self.btn_TrainNow.clicked.connect(self.btn_TrainNow_clicked)
         self.btn_SaveModel.clicked.connect(self.btn_SaveModel_clicked)
         self.btn_Help.clicked.connect(self.btn_Help_clicked)
-        self.cBox_EvaluateDataset.currentTextChanged.connect(
-            self.cBox_EvaluateDataset_currentTextChanged
-        )
-        self.dsBox_Threshold.valueChanged.connect(
-            self.dsBox_Threshold_valueChanged
-        )
-        self.btn_Help.clicked.connect(self.btn_Help_clicked)
+        self.cBox_EvaluateDataset.currentTextChanged.connect(self.cBox_EvaluateDataset_currentTextChanged)
+        self.dsBox_Threshold.valueChanged.connect(self.dsBox_Threshold_valueChanged)
 
         self.comboBox_ModelType.currentTextChanged.connect(
             self.comboBox_ModelType_currentTextChanged
         )
 
+        self.comboBox_ModelType.currentIndexChanged.connect(self.checkModelType)
+
+    def customInit(self):
+        """Custom init method"""
+        self.pBar_TrainProgress.setValue(0)
+        self.model = None
+        self.btn_TrainNow.setEnabled(False)
+
+    def checkModelType(self):
+        # Check if the current selection is "Decision Tree"
+        if self.comboBox_ModelType.currentText() == "Decision Tree":
+            self.dsBox_Threshold.setEnabled(False)  # Disable the threshold option
+        else:
+            self.dsBox_Threshold.setEnabled(True)
+
     def comboBox_ModelType_currentTextChanged(self):
         selected_model_type = self.comboBox_ModelType.currentText()
         print(f"Selected Model Type: {selected_model_type}")
 
+    def btn_ModelProperties_clicked(self):
+        """Clicked event on btn_ModelProperties component. 
+        Loads and shows the properties window for model type.
+        """
+        print("Model Properties Button Clicked...")
+        # self.modelType = 
+        self.ps_ui = Impl_ModelPropertiesWindow()
+        self.ps_ui.show()
 
     def btn_Help_clicked(self):
         """Clicked event on btn_Help component.
@@ -52,12 +74,6 @@ class Impl_ModelsWindow(Ui_ModelsWindow, QtWidgets.QMainWindow):
         """
         self.hs_ui = Impl_HelpWindow("Models")
         self.hs_ui.show()
-
-    def customInit(self):
-        """Custom init method"""
-        self.pBar_TrainProgress.setValue(0)
-        self.model = None
-        self.btn_TrainNow.setEnabled(False)
 
     def cBox_EvaluateDataset_currentTextChanged(self):
         """currentTextChanged event on cBox_EvaluateDataset
@@ -78,7 +94,12 @@ class Impl_ModelsWindow(Ui_ModelsWindow, QtWidgets.QMainWindow):
                 preds = self.model.predict(X)
                 print("preds created")
                 bce = tf.keras.losses.BinaryCrossentropy(from_logits=True)
-                loss = bce(Y, np.squeeze(preds,axis=1)).numpy()
+                
+                # Check if preds is more than 1-dimensional and squeeze accordingly
+                if preds.ndim > 1:
+                    preds = np.squeeze(preds, axis=1)
+
+                loss = bce(Y, preds).numpy()
 
                 bin_preds = np.floor(
                     preds + (1 - self.dsBox_Threshold.value())
@@ -112,10 +133,34 @@ class Impl_ModelsWindow(Ui_ModelsWindow, QtWidgets.QMainWindow):
             self.txtB_EvalMetricsTN.setText("{}".format(TN))
             self.txtB_EvalMetricsFP.setText("{}".format(FP))
             self.txtB_EvalMetricsFN.setText("{}".format(FN))
-            self.txtB_EvalMetricsAccuracy.setText("{:.4f}".format(accuracy))
-            self.txtB_EvalMetricsPrecision.setText("{:.4f}".format(precision))
-            self.txtB_EvalMetricsRecall.setText("{:.4f}".format(recall))
-            self.txtB_EvalMetricsF1.setText("{:.4f}".format(f1_score))
+
+            if self.cBox_MetricsAccuracy.isChecked():
+                self.txtB_EvalMetricsAccuracy.setText("{:.4f}".format(accuracy))
+                self.txtB_EvalMetricsAccuracy.setEnabled(True)
+            else:
+                self.txtB_EvalMetricsAccuracy.setText("")
+                self.txtB_EvalMetricsAccuracy.setEnabled(False)
+
+            if self.cBox_MetricsPrecision.isChecked():
+                self.txtB_EvalMetricsPrecision.setText("{:.4f}".format(precision))
+                self.txtB_EvalMetricsPrecision.setEnabled(True)
+            else:
+                self.txtB_EvalMetricsPrecision.setText("")
+                self.txtB_EvalMetricsPrecision.setEnabled(False)
+
+            if self.cBox_MetricsRecall.isChecked():
+                self.txtB_EvalMetricsRecall.setText("{:.4f}".format(recall))
+                self.txtB_EvalMetricsRecall.setEnabled(True)
+            else:
+                self.txtB_EvalMetricsRecall.setText("")
+                self.txtB_EvalMetricsRecall.setEnabled(False)
+
+            if self.cBox_MetricsF1.isChecked():
+                self.txtB_EvalMetricsF1.setText("{:.4f}".format(f1_score))
+                self.txtB_EvalMetricsF1.setEnabled(True)
+            else:
+                self.txtB_EvalMetricsF1.setText("")
+                self.txtB_EvalMetricsF1.setEnabled(False)
 
     def dsBox_Threshold_valueChanged(self):
         """valueChanged event on dsBox_Threshold
@@ -154,14 +199,33 @@ class Impl_ModelsWindow(Ui_ModelsWindow, QtWidgets.QMainWindow):
                 f1_score,
             ) = self.calculateMetrics(Y, bin_preds.T)
 
-            self.txtB_EvalMetricsTP.setText("{}".format(TP))
-            self.txtB_EvalMetricsTN.setText("{}".format(TN))
-            self.txtB_EvalMetricsFP.setText("{}".format(FP))
-            self.txtB_EvalMetricsFN.setText("{}".format(FN))
-            self.txtB_EvalMetricsAccuracy.setText("{:.4f}".format(accuracy))
-            self.txtB_EvalMetricsPrecision.setText("{:.4f}".format(precision))
-            self.txtB_EvalMetricsRecall.setText("{:.4f}".format(recall))
-            self.txtB_EvalMetricsF1.setText("{:.4f}".format(f1_score))
+            if self.cBox_MetricsAccuracy.isChecked():
+                self.txtB_EvalMetricsAccuracy.setText("{:.4f}".format(accuracy))
+                self.txtB_EvalMetricsAccuracy.setEnabled(True)
+            else:
+                self.txtB_EvalMetricsAccuracy.setText("")
+                self.txtB_EvalMetricsAccuracy.setEnabled(False)
+
+            if self.cBox_MetricsPrecision.isChecked():
+                self.txtB_EvalMetricsPrecision.setText("{:.4f}".format(precision))
+                self.txtB_EvalMetricsPrecision.setEnabled(True)
+            else:
+                self.txtB_EvalMetricsPrecision.setText("")
+                self.txtB_EvalMetricsPrecision.setEnabled(False)
+
+            if self.cBox_MetricsRecall.isChecked():
+                self.txtB_EvalMetricsRecall.setText("{:.4f}".format(recall))
+                self.txtB_EvalMetricsRecall.setEnabled(True)
+            else:
+                self.txtB_EvalMetricsRecall.setText("")
+                self.txtB_EvalMetricsRecall.setEnabled(False)
+
+            if self.cBox_MetricsF1.isChecked():
+                self.txtB_EvalMetricsF1.setText("{:.4f}".format(f1_score))
+                self.txtB_EvalMetricsF1.setEnabled(True)
+            else:
+                self.txtB_EvalMetricsF1.setText("")
+                self.txtB_EvalMetricsF1.setEnabled(False)
 
     def calculateMetrics(self, Y_true, Y_pred):
         """Calculates performance metrics.
@@ -406,6 +470,8 @@ class Impl_ModelsWindow(Ui_ModelsWindow, QtWidgets.QMainWindow):
             custom_metrics.append("precision")
         if self.cBox_MetricsRecall.isChecked():
             custom_metrics.append("recall")
+        if self.cBox_MetricsF1.isChecked():
+            custom_metrics.append("f1")
 
         self.btn_TrainNow.setEnabled(False)
         self.lbl_TrainProgress.setText(
@@ -427,22 +493,33 @@ class Impl_ModelsWindow(Ui_ModelsWindow, QtWidgets.QMainWindow):
         self.worker_train_model.worker_complete.connect(
             self.evtWorkerTrainModelFinished
         )
-        print("print 4")
 
     def btn_SaveModel_clicked(self):
-        """clicked event on btn_SaveModel
-        Saves model to a .h5 file."""
+        """Clicked event on btn_SaveModel Saves model to a .h5 or .model file."""
         widget = QWidget()
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
+        # Let the user choose the file format they want to save in
         fileName, _ = QFileDialog.getSaveFileName(
-            widget, "Save Model File", "", "H5 Files (*.h5)", options=options
+            widget, "Save Model File", "", "Model Files (*.h5;*.model)", options=options
         )
+
         if fileName:
-            fileName = (
-                fileName + ".h5" if not fileName.endswith(".h5") else fileName
-            )
-            self.model.save(fileName)
+            # Check if the model is a Keras model
+            if isinstance(self.model, KerasModel):
+                # Ensure the filename has the correct .h5 extension
+                if not fileName.endswith('.h5'):
+                    fileName += '.h5'
+                # Save using Keras' save function
+                self.model.save(fileName)
+            else:
+                # For non-Keras models, ensure the filename has the correct .model extension
+                if not fileName.endswith('.model'):
+                    fileName += '.model'
+                # Save using joblib
+                joblib.dump(self.model, fileName)
+
+            # Display a message box to inform the user of a successful save
             msg = QMessageBox()
             msg.setIcon(QMessageBox.Information)
             msg.setText("Model saved successfully at {}".format(fileName))
