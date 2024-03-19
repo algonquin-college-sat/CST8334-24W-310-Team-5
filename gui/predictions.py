@@ -178,8 +178,10 @@ class Impl_PredictionsWindow(Ui_PredictionsWindow, QtWidgets.QMainWindow):
         if fileName:
             if fileName.endswith('.h5'):
                 self.model = tf.keras.models.load_model(fileName)  # Load a Keras model if the file is .h5
+                self.dsBox_Threshold.setEnabled(True)
             elif fileName.endswith('.model'):
                 self.model = load(fileName)  # Load a scikit-learn model if the file is .model
+                self.dsBox_Threshold.setEnabled(False)
             else:
                 QMessageBox.warning(self, "Unsupported File", "The selected file type is not supported.")  # Show a warning if the file type is not supported
                 return  # Exit the function
