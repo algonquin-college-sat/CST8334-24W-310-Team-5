@@ -24,11 +24,14 @@ class Impl_MainWindow(Ui_MainWindow, QtWidgets.QMainWindow):
 
     def customInit(self):
         """Custom init method"""
-        pass
+        # self.btn_Label_clicked()
+        # self.handleButtonClick(self.btn_Label)
+        # pass
 
     def customEvents(self):
         """Custom events method; here you connect functions with the UI."""
-        self.label.clicked.connect(self.btn_Label_clicked)
+        # Connect the buttons to their respective action handlers
+        self.btn_Label.clicked.connect(self.btn_Label_clicked)
         self.btn_Datasets.clicked.connect(self.btn_Datasets_clicked)
         self.btn_Labeler.clicked.connect(self.btn_Labeler_clicked)
         self.btn_Risk.clicked.connect(self.btn_Risk_clicked)
@@ -37,6 +40,17 @@ class Impl_MainWindow(Ui_MainWindow, QtWidgets.QMainWindow):
         self.btn_Analysis.clicked.connect(self.btn_Analysis_clicked)
         self.btn_Visualize.clicked.connect(self.btn_Visualizations_clicked)
         self.btn_Help.clicked.connect(self.btn_Help_clicked)
+
+        # Connect the buttons to the handleButtonClick method for highlighting
+        # self.btn_Label.clicked.connect(lambda: self.handleButtonClick(self.btn_Label))
+        self.btn_Datasets.clicked.connect(lambda: self.handleButtonClick(self.btn_Datasets))
+        self.btn_Labeler.clicked.connect(lambda: self.handleButtonClick(self.btn_Labeler))
+        self.btn_Risk.clicked.connect(lambda: self.handleButtonClick(self.btn_Risk))
+        self.btn_Models.clicked.connect(lambda: self.handleButtonClick(self.btn_Models))
+        self.btn_Predictions.clicked.connect(lambda: self.handleButtonClick(self.btn_Predictions))
+        self.btn_Analysis.clicked.connect(lambda: self.handleButtonClick(self.btn_Analysis))
+        self.btn_Visualize.clicked.connect(lambda: self.handleButtonClick(self.btn_Visualize))
+        self.btn_Help.clicked.connect(lambda: self.handleButtonClick(self.btn_Help))
 
     def btn_Label_clicked(self):
         """Clicked event on btn_Datasets component.
@@ -130,3 +144,53 @@ class Impl_MainWindow(Ui_MainWindow, QtWidgets.QMainWindow):
             widget = item.widget()
             if widget is not None:
                 widget.deleteLater()
+
+    def handleButtonClick(self, clicked_button):
+        # Define CSS styles for default and highlighted buttons within the method
+        default_style = """
+            QPushButton {
+                background-color: #ffffff;
+                border-radius: 3px;
+                border: 6px solid #5d64b0;
+                color: #355398;
+                font: 12pt "Times";
+                font-weight: bold;
+                padding: 5px 3px;
+                text-decoration: none;
+            }
+            QPushButton:hover {
+                background-color: #def2ff;
+            }
+            QPushButton:pressed {
+                position: relative;
+                top: 1px;
+            }
+        """
+
+        highlighted_style = """
+            QPushButton {
+                background-color: #def2ff;  /* Highlighted state background */
+                border-radius: 3px;
+                border: 6px solid #5d64b0;  /* Consider a different border color to indicate active state */
+                color: #355398;
+                font: 12pt "Times";
+                font-weight: bold;
+                padding: 5px 3px;
+                text-decoration: none;
+                position: relative;  /* Optional: to mimic the pressed effect */
+            }
+        """
+
+        # Reset the style of the previously highlighted button
+        if hasattr(self, 'currently_highlighted_button') and self.currently_highlighted_button is not None:
+            self.currently_highlighted_button.setStyleSheet(default_style)
+
+        # Check if the clicked button is the btn_Label
+        if clicked_button == self.btn_Label:
+            # No stylesheet applied for btn_Label when clicked
+            self.currently_highlighted_button = None
+        else:
+            # Apply the highlighted style to the clicked button
+            clicked_button.setStyleSheet(highlighted_style)
+            # Update the reference to the currently highlighted button
+            self.currently_highlighted_button = clicked_button

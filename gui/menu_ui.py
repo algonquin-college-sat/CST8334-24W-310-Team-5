@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets, Qt
-
+import menu_res_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -82,12 +82,12 @@ class Ui_MainWindow(object):
 
         # Adding the buttons to the vertical layout
 
-        # Add the label to the main layout
-        self.label = QtWidgets.QPushButton(self.centralwidget)
-        self.label.setObjectName("label")
-        self.label.setGeometry(QtCore.QRect(0, 50, 100, 20))
-        self.label.setText("ML Vinci Tool")
-        self.leftLayout.addWidget(self.label)
+        # ML Vinci Tool button
+        self.btn_Label = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_Label.setObjectName("btn_Label")
+        self.btn_Label.setGeometry(QtCore.QRect(0, 50, 100, 20))
+        self.btn_Label.setText("ML Vinci Tool")
+        self.leftLayout.addWidget(self.btn_Label)
 
         # Dataset button
         self.btn_Datasets = QtWidgets.QPushButton(self.centralwidget)
@@ -112,22 +112,26 @@ class Ui_MainWindow(object):
         self.btn_Models.setObjectName("btn_Models")
         self.btn_Models.setGeometry(QtCore.QRect(10, 150, 100, 30))
         self.leftLayout.addWidget(self.btn_Models)
+
         # Prediction button
         self.btn_Predictions = QtWidgets.QPushButton(self.centralwidget)
         self.btn_Predictions.setObjectName("btn_Predictions")
         self.btn_Predictions.setGeometry(QtCore.QRect(10, 200, 100, 30))
         self.leftLayout.addWidget(self.btn_Predictions)
-        # adding new button to Visualize prediction results
+
+        # Analysis button
         self.btn_Analysis = QtWidgets.QPushButton(self.centralwidget)
         self.btn_Analysis.setObjectName("btn_Analysis")
         self.btn_Analysis.setGeometry(QtCore.QRect(10, 250, 100, 30))
         self.leftLayout.addWidget(self.btn_Analysis)
-        # adding new button to Visualize input dataset results
+
+        # Visualize button
         self.btn_Visualize = QtWidgets.QPushButton(self.centralwidget)
         self.btn_Visualize.setObjectName("btn_Visualize")
         self.btn_Visualize.setGeometry(QtCore.QRect(10, 250, 100, 30))
         self.leftLayout.addWidget(self.btn_Visualize)
-        # HELP button
+
+        # Help button
         self.btn_Help = QtWidgets.QPushButton(self.centralwidget)
         self.btn_Help.setObjectName("btn_Help")
         self.btn_Help.setGeometry(QtCore.QRect(10, 300, 100, 30))
@@ -135,17 +139,7 @@ class Ui_MainWindow(object):
         self.leftLayout.addWidget(QtWidgets.QWidget()) # adding a spacer
         self.leftLayout.addWidget(QtWidgets.QWidget())  # adding a spacer
 
-        #font settings for all buttons
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(14)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setWeight(30)
-        font.setStrikeOut(False)
-        self.label.setFont(font)
-        self.label.setStyleSheet(
+        self.btn_Label.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
             "    border-radius:3px;\n"
@@ -164,23 +158,15 @@ class Ui_MainWindow(object):
             "    top:1px;\n"
             "}"
         )
-        self.label.setObjectName("label")
+        self.btn_Label.setObjectName("btn_Label")
 
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.btn_Datasets.setFont(font)
         self.btn_Datasets.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
             "    border-radius:3px;\n"
             "    border:6px solid #5d64b0;\n"
             "    color:#355398;\n"
-            '    font: 12pt "Times";\n'
+            '    font: 13pt "Times";\n'
             "    font-weight: bold;\n"
             "    padding:5px 3px;\n"
             "    text-decoration:none;\n"
@@ -195,14 +181,6 @@ class Ui_MainWindow(object):
         )
         self.btn_Datasets.setObjectName("btn_Datasets")
 
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.btn_Labeler.setFont(font)
         self.btn_Labeler.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
@@ -224,14 +202,6 @@ class Ui_MainWindow(object):
         )
         self.btn_Labeler.setObjectName("btn_Labeler")
 
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.btn_Risk.setFont(font)
         self.btn_Risk.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
@@ -253,14 +223,6 @@ class Ui_MainWindow(object):
         )
         self.btn_Risk.setObjectName("btn_Risk")
 
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.btn_Models.setFont(font)
         self.btn_Models.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
@@ -282,14 +244,6 @@ class Ui_MainWindow(object):
         )
         self.btn_Models.setObjectName("btn_Models")
 
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.btn_Predictions.setFont(font)
         self.btn_Predictions.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
@@ -311,15 +265,6 @@ class Ui_MainWindow(object):
         )
         self.btn_Predictions.setObjectName("btn_Predictions")
 
-        # button btn_Visualize
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.btn_Analysis.setFont(font)
         self.btn_Analysis.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
@@ -341,14 +286,6 @@ class Ui_MainWindow(object):
         )
         self.btn_Analysis.setObjectName("btn_Analysis")
 
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.btn_Visualize.setFont(font)
         self.btn_Visualize.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
@@ -370,14 +307,6 @@ class Ui_MainWindow(object):
         )
         self.btn_Visualize.setObjectName("btn_Visualize")
 
-        font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setStrikeOut(False)
-        self.btn_Help.setFont(font)
         self.btn_Help.setStyleSheet(
             "* {\n"
             "    background-color:#ffffff;\n"
@@ -412,6 +341,7 @@ class Ui_MainWindow(object):
         button_height = 70
 
         # Set the height of each button
+        self.btn_Label.setFixedHeight(button_height)
         self.btn_Datasets.setFixedHeight(button_height)
         self.btn_Labeler.setFixedHeight(button_height)
         self.btn_Risk.setFixedHeight(button_height)
@@ -427,6 +357,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Vinci ML Tool"))
+        self.btn_Label.setText(_translate("MainWindow", "ML Vinci Tool"))
         self.btn_Datasets.setText(_translate("MainWindow", "DATASETS"))
         self.btn_Labeler.setText(_translate("MainWindow", "LABELER"))
         self.btn_Risk.setText(_translate("MainWindow", "RISK"))
@@ -435,6 +366,3 @@ class Ui_MainWindow(object):
         self.btn_Analysis.setText(_translate("MainWindow", "DATA ANALYSIS"))
         self.btn_Visualize.setText(_translate("MainWindow", "VISUALIZE PREDICTIONS"))
         self.btn_Help.setText(_translate("MainWindow", "HELP"))
-
-
-import menu_res_rc
