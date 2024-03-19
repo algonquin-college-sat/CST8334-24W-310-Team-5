@@ -21,39 +21,31 @@ class Ui_DataAnalysisWindow(object):
         DataAnalysisWindow.setFont(font)
         self.centralwidget = QtWidgets.QWidget(DataAnalysisWindow)
         self.centralwidget.setStyleSheet("*{\n"
-"color: #fff;\n"
+"color: #000;\n"  # Changed text color to black for better readability
 "font-size: 12px;\n"
-"border: nine;\n"
+"border: none;\n"  # Assuming 'nine' was a typo, changed to 'none'
 "}\n"
 "#centralwidget{\n"
-"background-color: rgb(33, 43, 51);\n"
+"background-color: #ffffff;\n"  # Light grey background for the main widget
 "}\n"
 "#left_menu_widget, #Performance, #ROC_curve, #T10_Issues, #CWEs_accuracy, #whatever{\n"
-"background-color: rgba(61, 80, 95, 100);\n"
+"background-color: rgba(240, 240, 240, 100);\n"  # Slightly darker shade for these widgets
 "}\n"
 "#header_frame, #frame_3, #frame_5{\n"
-"background-color: rgb(61, 80, 95);\n"
+"background-color: #e0e0e0;\n"  # Medium light grey for header and frames
 "}\n"
 "#frame_4 QPushButton{\n"
 "padding: 10px;\n"
 "border-radius: 5px;\n"
-"background-color: rgba(33, 43, 51, 100);\n"
+"background-color: rgba(220, 220, 220, 100);\n"  # Light grey for buttons with padding
 "}\n"
-"#header_nav QPushButton{\n"
-"border: 3px solid rgb(120, 157, 186);\n"
+"#header_nav QPushButton, #frame_8 QPushButton{\n"
+"border: 2px solid rgba(247, 247, 247, 100);\n"  # Lighter border color for buttons
 "border-radius: 5px;\n"
-"background-color: rgb(61, 80, 95);\n"
+"background-color: rgba(247, 247, 247, 1);\n"  # Button background color in light mode
 "}\n"
-"#header_nav QPushButton:hover{\n"
-"background-color: rgb(120, 157, 186);\n"
-"}\n"
-"#frame_8 QPushButton{\n"
-"border: 3px solid rgb(120, 157, 186);\n"
-"border-radius: 5px;\n"
-"background-color: rgb(61, 80, 95);\n"
-"}\n"
-"#frame_8 QPushButton:hover{\n"
-"background-color: rgb(120, 157, 186);\n"
+"#header_nav QPushButton:hover, #frame_8 QPushButton:hover{\n"
+"background-color: rgba(187, 187, 187, 100);\n"  # Light hover color for buttons
 "}")
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.centralwidget)
@@ -160,12 +152,13 @@ class Ui_DataAnalysisWindow(object):
         self.frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_8.setObjectName("frame_8")
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.frame_8)
-        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_3.setContentsMargins(10, 0, 0, 0)
         self.horizontalLayout_3.setSpacing(2)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.pushButton_6 = QtWidgets.QPushButton(self.frame_8)
-        self.pushButton_6.setMinimumSize(QtCore.QSize(60, 30))
-        self.pushButton_6.setMaximumSize(QtCore.QSize(60, 30))
+        # self.pushButton_6.setMinimumSize(QtCore.QSize(60, 30))
+        # self.pushButton_6.setMaximumSize(QtCore.QSize(60, 30))
+        self.pushButton_6.setFixedSize(QtCore.QSize(180, 30))
         font = QtGui.QFont()
         font.setFamily("Calibri")
         font.setPointSize(-1)
@@ -392,7 +385,7 @@ class Ui_DataAnalysisWindow(object):
         self.pushButton_3.setText(_translate("DataAnalysisWindow", "Top10 Coding Issues"))
         self.pushButton_4.setText(_translate("DataAnalysisWindow", "CWEs accuracy"))
         self.pushButton_5.setText(_translate("DataAnalysisWindow", "PR curve"))
-        self.pushButton_6.setText(_translate("DataAnalysisWindow", "Select File"))
+        self.pushButton_6.setText(_translate("DataAnalysisWindow", "Load Prediction Dataset"))
         self.label_3.setText(_translate("DataAnalysisWindow", "DASHBOARD"))
         self.label_5.setText(_translate("DataAnalysisWindow", "Performance"))
         self.label_8.setText(_translate("DataAnalysisWindow", "CWEs Accuracy"))
