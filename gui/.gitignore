@@ -1,2 +1,3 @@
+# Ignore a specific file or directory
 .DS_Store
  __pycache__/
