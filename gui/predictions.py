@@ -164,6 +164,7 @@ class Impl_PredictionsWindow(Ui_PredictionsWindow, QtWidgets.QMainWindow):
                 self.txtB_SchemaPath.setText(fileName)
         if self.checkFilesHealth():
             self.loadDataframe(self.txtB_DatasetPath.text())
+        # print("Dataset Path:" + self.txtB_DatasetPath.text())
 
     def btn_LoadModel_clicked(self):
         """clicked event on btn_LoadModel
@@ -208,9 +209,7 @@ class Impl_PredictionsWindow(Ui_PredictionsWindow, QtWidgets.QMainWindow):
         Returns:
             tuple(X:np.ndarray, tp_label:str): Input values for model and true positive label.
         """
-        outputColumn = [c for c in self.schemaDict["columns"] if c["type"] == "Output"][
-            0
-        ]
+        outputColumn = [c for c in self.schemaDict["columns"] if c["type"] == "Output"][0]
 
         num_df = pd.DataFrame()
         for col in self.schemaDict["columns"]:
@@ -224,18 +223,11 @@ class Impl_PredictionsWindow(Ui_PredictionsWindow, QtWidgets.QMainWindow):
                         col_idx = unique.index(val)
                         curr_feature[i][col_idx] = 1
                     except ValueError:
-                        col_idx = -1
+                        # Handle the case where the value is not found in 'unique' list
+                        pass  # You might want to log this or handle it in a specific way
                 dummy_col_names = ["{}_{}".format(col["name"], i) for i in range(num_unique)]
-                curr_feature = pd.DataFrame(
-                    curr_feature, columns=dummy_col_names
-                )
+                curr_feature = pd.DataFrame(curr_feature, columns=dummy_col_names)
                 num_df = pd.concat([num_df, curr_feature], axis=1)
-
-        # output_df = (self.df_dataset[outputColumn["name"]] ==
-        #             outputColumn["tplabel"]).astype(int)
-        # output_df = pd.DataFrame({outputColumn["name"]: output_df})
-
-        # num_df = pd.concat([num_df, output_df], axis=1)
 
         X = num_df.values
         tp_label = outputColumn["tplabel"]
@@ -246,6 +238,11 @@ class Impl_PredictionsWindow(Ui_PredictionsWindow, QtWidgets.QMainWindow):
         """clicked event on btn_Predict
         Performs inference and stores predictions in memory.
         """
+
+        if self.df_dataset is None:
+            QMessageBox.warning(self, "Error", "Dataset not loaded or initialized properly")
+            return
+
         X, tp_label = self.extractData()
 
         self.tp_label = tp_label
